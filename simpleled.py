@@ -2,6 +2,11 @@
 # takes two args: max led to light up, and the color to use
 # it will turn off all leds > max led to light up
 # specify color of "off" to turn off the LEDs
+#
+# this is super-simple and just very basic, but still some have
+# some basic error checking added at some point.   right now i
+# just use it to tell me how many IMs i have unread by putting
+# in a simple trigger on IM signal.
 
 import sys
 import time
