@@ -50,13 +50,12 @@ def main():
 
     highestLEDToLight = int(sys.argv[1])
     ledColor = str(sys.argv[2])
+    storedLEDsLit = int(bstick.get_info_block1())
 
-    storedLEDsLit = bstick.get_info_block1()
-
-    if storedLEDsLit < MAX_NUM_LEDS:
+    if highestLEDToLight < storedLEDsLit:
         lightLEDs(highestLEDToLight, storedLEDsLit, ledColor)
     else:
-        lightLEDs(highestLEDToLight, MAX_NUM_LEDS, ledColor)
+        lightLEDs(highestLEDToLight, highestLEDToLight, ledColor)
 
 if __name__ == "__main__":
     sys.exit(main())
