@@ -35,7 +35,7 @@ def lightLEDs(ledsToLight, maxLEDs, color):
             time.sleep(.001)  # it seems if we don't have a minimal sleep blinkstick goes missing
 
         bstick.set_info_block1(str(ledsToLight));
-        print "Stored " + str(ledsToLight) + " in on-strip memory"
+        #print "Stored " + str(ledsToLight) + " in on-strip memory"
     except KeyboardInterrupt:
         #bstick.off()
         return
