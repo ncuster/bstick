@@ -28,7 +28,7 @@ if adiumisrunning then
 		do shell script "~NCUSTER/ncuster/scripts/simpleled.py " & unreads & " " & ledColor
 	end tell
 else
-	return "off"
+	return "Adium is not running"
 end if
 
 #tell application "Adium" to get properties
